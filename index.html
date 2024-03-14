@@ -330,10 +330,16 @@
                                         placeholder="Your Name" required="required" />
                                 </div>
                             </div>
-                            <div class="col-sm-12">
+                            <div class="col-sm-6">
                                 <div class="form-group">
                                     <input type="email" class="form-control bg-transparent p-4" id="email"
-                                        placeholder="Your Email" required="required" />
+                                        placeholder="Your Email" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="number" class="form-control bg-transparent p-4" id="mobile"
+                                        placeholder="Your Mobile no." required="required" />
                                 </div>
                             </div>
                         </div>
@@ -781,9 +787,10 @@
             var params = {
                 name: document.getElementById("name").value,
                 email: document.getElementById("email").value,
-                message: document.getElementById("massage").value,
+                mobile: document.getElementById("mobile").value,
                 date: document.getElementById("date").value,
-                time: document.getElementById("time").value
+                time: document.getElementById("time").value,
+                message: document.getElementById("massage").value,
             };
 
             const serviceID = "service_fuccn8d";
@@ -793,9 +800,10 @@
                 .then(function (response) {
                     document.getElementById("name").value = "";
                     document.getElementById("email").value = "";
-                    document.getElementById("massage").value = "";
+                    document.getElementById("mobile").value = "";
                     document.getElementById("date").value = "";
                     document.getElementById("time").value = "";
+                    document.getElementById("massage").value = "";
 
                     console.log("Email sent successfully", response);
                     Swal.fire({
