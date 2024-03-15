@@ -70,7 +70,7 @@ body {
   line-height: 1.5;
   color: #757575;
   text-align: left;
-  background-color: #fff;
+  background-color: #f6e4a482;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -6762,7 +6762,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #fff7d9 !important;
+  background-color: #fffbec !important;
 }
 
 a.bg-light:hover,
@@ -10843,7 +10843,7 @@ h6,
   top: 0;
 }
 
-.testimonial-carousel .owl-dots {
+/* .testimonial-carousel .owl-dots {
   margin-top: 20px;
 }
 
@@ -10860,7 +10860,7 @@ h6,
 .testimonial-carousel .owl-dot.active {
   width: 50px;
   background: #b08e14;
-}
+} */
 
 .footer p,
 .footer a,
@@ -10993,4 +10993,55 @@ h6,
 .active-btn {
   color: #fff;
   background-color: #b08e14;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 21px;
+  left: 9px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 20px;
+}
+
+.owl-prev {
+  position: absolute;
+  left: 40%;
+  top: 167px;
+  background-color: #b08e14;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.owl-next {
+  position: absolute;
+  right: 40%;
+  top: 167px;
+  background-color: #b08e14;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.owl-next i {
+  margin-top: 13px;
+  margin-left: 13px;
+  color: #fff;
+}
+
+.owl-prev i {
+  margin-top: 13px;
+  margin-left: 13px;
+  color: #fff;
 }

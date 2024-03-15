@@ -1,6 +1,6 @@
 (function ($) {
     "use strict";
-    
+
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
@@ -17,8 +17,8 @@
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -28,7 +28,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -55,22 +55,22 @@
         smartSpeed: 1500,
         loop: true,
         dots: false,
-        nav : false,
+        nav: false,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:2
+            576: {
+                items: 2
             },
-            768:{
-                items:3
+            768: {
+                items: 3
             },
-            992:{
-                items:4
+            992: {
+                items: 4
             },
-            1200:{
-                items:5
+            1200: {
+                items: 5
             }
         }
     });
@@ -83,16 +83,16 @@
         margin: 30,
         loop: true,
         dots: false,
-        nav : false,
+        nav: false,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:2
+            768: {
+                items: 2
             }
         }
     });
@@ -103,10 +103,13 @@
         autoplay: true,
         smartSpeed: 1500,
         margin: 30,
-        dots: true,
+        dots: false,
+        nav: true,
         loop: true,
         items: 1
     });
-    
+    $(".owl-prev").html('<i class="fa fa-chevron-left"></i > ');
+    $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
+
 })(jQuery);
 
