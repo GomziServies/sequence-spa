@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -134,18 +133,25 @@
     </div>
     <!-- About End -->
 
-
     <!-- Service Start -->
     <div class="container-fluid px-0 py-5 my-5" id="service">
         <div class="row mx-0 justify-content-center text-center">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <h6 class="d-inline-block bg-light text-primary text-uppercase py-1 px-2">Our Service</h6>
                 <h1>Spa & Beauty Services</h1>
             </div>
+            <div class="mt-3">
+                <a class="btn btn-outline-primary me-3 active-btn" onclick="showCarousel('imperative')">Imperative
+                    Therapy</a>
+                <a class="btn btn-outline-primary me-3 my-2 my-md-0" onclick="showCarousel('signature')">Sequence's
+                    Signature
+                    Therapies</a>
+                <a class="btn btn-outline-primary me-3" onclick="showCarousel('premium')">Premium Therapies</a>
+            </div>
         </div>
-        <div class="owl-carousel service-carousel">
+        <div class="owl-carousel service-carousel" id="imperative">
             <div class="service-item position-relative">
-                <img class="img-fluid" src="img/powder-therapy.jpg" alt="">
+                <img class="img-fluid" src="img/powder-massage.jpg" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Powder Therapy</h4>
                     <p class="text-white px-3 mb-3">Powder Therapy is part of Ayurveda massage and its made by herbs.
@@ -228,7 +234,7 @@
             <div class="service-item position-relative">
                 <img class="img-fluid" src="img/sait-scrub-treatments.jpg" alt="">
                 <div class="service-text text-center">
-                    <h4 class="text-white font-weight-medium px-3">Sait Scrub Treatments</h4>
+                    <h4 class="text-white font-weight-medium px-3">Salt Scrub Treatments</h4>
                     <p class="text-white px-3 mb-3">stof slow Salt scrub is good and most popular body treatment at the
                         spa. lt makes skin softer and smoother by</p>
                     <div class="w-100 bg-white text-center p-4">
@@ -278,7 +284,7 @@
                 </div>
             </div>
             <div class="service-item position-relative">
-                <img class="img-fluid" src="img/sports-therapy.jpg" alt="">
+                <img class="img-fluid" src="img/sport-massage.jpg" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Sports Therapy</h4>
                     <p class="text-white px-3 mb-3">Sports Therapy is a form of massage involving the manipulation of
@@ -317,8 +323,176 @@
                     </div>
                 </div>
             </div>
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="img/cream-therapy.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3">Cream Therapy</h4>
+                    <p class="text-white px-3 mb-3">Cream provides the right balance and suitable for therapists who
+                        want more glide. Massage cream glide easily over the skin creating a surface that is neither too
+                        slippery nor dry. </p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary"
+                            href="https://api.whatsapp.com/send?phone=+919558436600&text=Hello I want to know more about Abhayanga Therapy">Make
+                            Order</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row justify-content-center bg-appointment mx-0">
+        <div class="owl-carousel service-carousel" id="signature">
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="img/glorious.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3">Sequence's Signature Glorious</h4>
+                    <p class="text-white px-3 mb-3">Dry Therapy + Deep Tissue + Body Wrap
+                    </p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary"
+                            href="https://api.whatsapp.com/send?phone=+919558436600&text=Hello I want to know more about Powder Therapy">Make
+                            Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="img/vivid.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3">Sequence's Vivid</h4>
+                    <p class="text-white px-3 mb-3">Cleansing + Aroma Therapy + Body Wrap
+                    </p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary"
+                            href="https://api.whatsapp.com/send?phone=+919558436600&text=Hello I want to know more about Powder Therapy">Make
+                            Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="img/lawa.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3">Sequence's Signature Lawa</h4>
+                    <p class="text-white px-3 mb-3">Scrub + Balinese + Steam
+                    </p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary"
+                            href="https://api.whatsapp.com/send?phone=+919558436600&text=Hello I want to know more about Powder Therapy">Make
+                            Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="img/spirit.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3">Sequence's Essence Of Spirit</h4>
+                    <p class="text-white px-3 mb-3">Thai Therapy + Swedish + Body Wrap
+                    </p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary"
+                            href="https://api.whatsapp.com/send?phone=+919558436600&text=Hello I want to know more about Powder Therapy">Make
+                            Order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel service-carousel" id="premium">
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="img/Ice-massage.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3">Ice Therapy</h4>
+                    <p class="text-white px-3 mb-3">Ice Therapy is one of the most effective ways to treat a soft tissue
+                        injury.
+                    </p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary"
+                            href="https://api.whatsapp.com/send?phone=+919558436600&text=Hello I want to know more about Powder Therapy">Make
+                            Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="img/four-hand.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3">Four Hand Therapy</h4>
+                    <p class="text-white px-3 mb-3">In a four-hand Therapy, two therapists work on one client, often
+                        using synchronized moves.
+                    </p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary"
+                            href="https://api.whatsapp.com/send?phone=+919558436600&text=Hello I want to know more about Powder Therapy">Make
+                            Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="img/body-polishing.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3">Basic Body Polishing</h4>
+                    <p class="text-white px-3 mb-3">Basic body polishing is a treatment for the skin, sort of like a
+                        facial for the body.
+                    </p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary"
+                            href="https://api.whatsapp.com/send?phone=+919558436600&text=Hello I want to know more about Powder Therapy">Make
+                            Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="img/potli-massage.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3">Potli Massage</h4>
+                    <p class="text-white px-3 mb-3">Potli therapy is technique that uses various herbs in powder forms,
+                        wrapped in small bag witch is warmed in milk or medicated oils.
+                    </p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary"
+                            href="https://api.whatsapp.com/send?phone=+919558436600&text=Hello I want to know more about Powder Therapy">Make
+                            Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="img/hot-stone.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3">Hot Stone</h4>
+                    <p class="text-white px-3 mb-3">Hot Stone massage therapy melts away tension, easy muscle stiffness
+                        and increases circulation and metabolism.
+                    </p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary"
+                            href="https://api.whatsapp.com/send?phone=+919558436600&text=Hello I want to know more about Powder Therapy">Make
+                            Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="img/shirodhara.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3">Shirodhara</h4>
+                    <p class="text-white px-3 mb-3">Shirodhara is a form of Ayurveda therapy that involves gently
+                        pouring liquids over the forehead.
+                    </p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary"
+                            href="https://api.whatsapp.com/send?phone=+919558436600&text=Hello I want to know more about Powder Therapy">Make
+                            Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="img/body-polishing.jpg" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3">Body Polishing</h4>
+                    <p class="text-white px-3 mb-3">Body polish is a treatment for skin which is normally done by using
+                        natural abrasive products that are massaged, scrubbed and rubbed on to your skin.
+                    </p>
+                    <div class="w-100 bg-white text-center p-4">
+                        <a class="btn btn-primary"
+                            href="https://api.whatsapp.com/send?phone=+919558436600&text=Hello I want to know more about Powder Therapy">Make
+                            Order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center bg-appointment mx-0" id="contect">
             <div class="col-lg-6 py-5">
                 <div class="py-5 px-3 px-md-5 my-5" style="background: rgb(0 0 0 / 70%);border-radius: 10px;">
                     <h1 class="text-white text-center mb-4">Make Appointment</h1>
@@ -397,112 +571,34 @@
                     <div class="hours-text bg-light p-4 p-lg-5 my-lg-5">
                         <h6 class="d-inline-block text-white text-uppercase bg-primary py-1 px-2">Open Hours</h6>
                         <h1 class="mb-4">Best Relax And Spa Zone</h1>
-                        <p>SeQuence Traditional Spa For Wellness" is a sanctuary dedicated to revitalizing your body,
-                            mind, and spirit through time-honored spa rituals. Our expert therapists craft personalized
+                        <p>SeQuence Traditional Spa For Wellness" is a sanctuary dedicated to revitalizing your
+                            body,
+                            mind, and spirit through time-honored spa rituals. Our expert therapists craft
+                            personalized
                             experiences blending traditional techniques with modern wellness practices to promote
                             relaxation, rejuvenation, and inner harmony.</p>
                         <ul class="list-inline">
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Mon – Fri : 10:00 AM -
+                            <li class="h6 py-1"><i class="fas fa-caret-right text-primary mr-3"></i>Mon – Fri :
+                                10:00 AM
+                                -
                                 10:00 PM</li>
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Saturday : 10:00 AM -
+                            <li class="h6 py-1"><i class="fas fa-caret-right text-primary mr-3"></i>Saturday : 10:00
+                                AM
+                                -
                                 10:00
                                 PM</li>
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Sunday : 10:00 AM - 10:00
+                            <li class="h6 py-1"><i class="fas fa-caret-right text-primary mr-3"></i>Sunday : 10:00
+                                AM -
+                                10:00
                                 PM</li>
                         </ul>
-                        <a href="./contact.html" class="btn btn-primary mt-2">Book Now</a>
+                        <a href="#contect" class="btn btn-primary mt-2">Book Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Open Hours End -->
-
-
-    <!-- Pricing Start -->
-    <!-- <div class="container-fluid bg-pricing" style="margin: 90px 0;" id="price">
-        <div class="container">
-            <div class="row">
-                <div class="mt-5 text-center d-md-none d-block">
-                    <div class="col-12">
-                        <h1 class="text-white">Pricing of Our Services</h1>
-                    </div>
-                </div>
-                <div class="col-lg-5 d-none d-md-block" style="min-height: 500px;">
-                    <div class="position-relative h-100 ">
-                        <img class="position-absolute w-100 h-100 " src="img/pricing.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-7 pt-3 pb-lg-5 px-0">
-                    <div class="pricing-text bg-light p-4 p-lg-5 my-lg-5" style="border-radius: 15px 15px 15px 15px;">
-                        <div class="owl-carousel pricing-carousel">
-                            <div class="bg-white">
-                                <div
-                                    class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
-                                    <h1 class="display-4 mb-0">
-                                        <small class="align-top text-muted font-weight-medium"
-                                            style="font-size: 22px; line-height: 45px;">$</small>49<small
-                                            class="align-bottom text-muted font-weight-medium"
-                                            style="font-size: 16px; line-height: 40px;">/Mo</small>
-                                    </h1>
-                                    <h5 class="text-primary text-uppercase m-0">Basic Plan</h5>
-                                </div>
-                                <div class="p-4">
-                                    <p><i class="fa fa-check text-success mr-2"></i>Full Body Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Deep Tissue Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Hot Stone Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Tissue Body Polish</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care</p>
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
-                                </div>
-                            </div>
-                            <div class="bg-white">
-                                <div
-                                    class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
-                                    <h1 class="display-4 mb-0">
-                                        <small class="align-top text-muted font-weight-medium"
-                                            style="font-size: 22px; line-height: 45px;">$</small>99<small
-                                            class="align-bottom text-muted font-weight-medium"
-                                            style="font-size: 16px; line-height: 40px;">/Mo</small>
-                                    </h1>
-                                    <h5 class="text-primary text-uppercase m-0">Family Plan</h5>
-                                </div>
-                                <div class="p-4">
-                                    <p><i class="fa fa-check text-success mr-2"></i>Full Body Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Deep Tissue Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Hot Stone Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Tissue Body Polish</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care</p>
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
-                                </div>
-                            </div>
-                            <div class="bg-white">
-                                <div
-                                    class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
-                                    <h1 class="display-4 mb-0">
-                                        <small class="align-top text-muted font-weight-medium"
-                                            style="font-size: 22px; line-height: 45px;">$</small>149<small
-                                            class="align-bottom text-muted font-weight-medium"
-                                            style="font-size: 16px; line-height: 40px;">/Mo</small>
-                                    </h1>
-                                    <h5 class="text-primary text-uppercase m-0">VIP Plan</h5>
-                                </div>
-                                <div class="p-4">
-                                    <p><i class="fa fa-check text-success mr-2"></i>Full Body Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Deep Tissue Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Hot Stone Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Tissue Body Polish</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care</p>
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Pricing End -->
 
 
     <!-- Team Start -->
@@ -593,7 +689,8 @@
                                     <span>⭐⭐⭐⭐⭐</span>
                                 </div>
                             </div>
-                            <p class="m-0">It was very refreshing and had wonderful time with my masseuse lady (Liza).
+                            <p class="m-0">It was very refreshing and had wonderful time with my masseuse lady
+                                (Liza).
                                 10/10 friendly staff.. highly recommended..Awesome service. Please do come..
                             </p>
                         </div>
@@ -608,7 +705,8 @@
                                     <span>⭐⭐⭐⭐⭐</span>
                                 </div>
                             </div>
-                            <p class="m-0">It’s really nice experience I feel I am in Thailand staffs are so friendly
+                            <p class="m-0">It’s really nice experience I feel I am in Thailand staffs are so
+                                friendly
                                 even front desk also they explained nicely great
                             </p>
                         </div>
@@ -638,7 +736,8 @@
                                     <span>⭐⭐⭐⭐⭐</span>
                                 </div>
                             </div>
-                            <p class="m-0">Very good Facilities available here. I feel very relax at your place. Good
+                            <p class="m-0">Very good Facilities available here. I feel very relax at your place.
+                                Good
                                 atmosphere like Haven with music. Its wow movements. Staff are nice and having good
                                 behavior like professiona.
                             </p>
@@ -654,7 +753,8 @@
                                     <span>⭐⭐⭐⭐⭐</span>
                                 </div>
                             </div>
-                            <p class="m-0">Very nice service available here... Staff are very good. And good behaviour... Tell to everyone that visit for relaxation.... 👍
+                            <p class="m-0">Very nice service available here... Staff are very good. And good
+                                behaviour... Tell to everyone that visit for relaxation.... 👍
                             </p>
                         </div>
                     </div>
@@ -672,11 +772,14 @@
                     <a href="index.html" class="navbar-brand mb-3">
                         <img src="./img/logo.png" alt="logo" width="60%">
                     </a>
-                    <p class="mb-5">Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor sea
-                        ipsum diam sed
-                        clita dolore eos dolores magna erat dolore sed stet justo et dolor.</p>
+                    <p class="mb-5">Sequence Traditional spa for wellness is one of the finest beauty and wellness
+                        centres of Surat. We are offer range of massage therapy for distress and rejuvenation. We
+                        also
+                        offer services for body care, skin care etc. We are introducing you to our organization and
+                        welcome you as a member of our Sequence team!</p>
                     <h5 class="text-white text-uppercase mb-3">Contact Us</h5>
-                    <p><i class="fa fa-map-marker-alt mr-2"></i><b>Branch 1 :</b> RSM Unit. 33, 34, Reliance Mall, 2nd
+                    <p><i class="fa fa-map-marker-alt mr-2"></i><b>Address :</b> RSM Unit. 33, 34, Reliance Mall,
+                        2nd
                         Floor, opp. Apple
                         Hospital, Udhana Darwaja, Surat, Gujarat 395002</p>
                     <p><i class="fa fa-phone-alt mr-2"></i>+91 95584 36600</p>
@@ -707,7 +810,8 @@
                                     Services</a>
                                 <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Pricing
                                     Plan</a>
-                                <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                                <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact
+                                    Us</a>
                             </div>
                         </div>
                         <div class="col-sm-6 mb-5">
@@ -721,7 +825,8 @@
                                     Therapy</a>
                                 <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Skin
                                     Care</a>
-                                <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Nail Care</a>
+                                <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Nail
+                                    Care</a>
                             </div>
                         </div>
                         <div class="col-12 mb-5">
@@ -778,6 +883,21 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.service-carousel').not('#imperative').hide();
+            $('.btn[onclick="showCarousel(\'imperative\')"]').addClass('active-btn');
+        });
+
+        function showCarousel(id) {
+            $('.service-carousel').hide();
+            $('.btn').removeClass('active-btn');
+            $('#' + id).show();
+            $('[onclick="showCarousel(\'' + id + '\')"]').addClass('active-btn');
+        }
+
+    </script>
+
     <script>
         (function () {
             emailjs.init("2Zbwo0iTE4DdA2ra_");

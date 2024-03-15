@@ -10978,3 +10978,19 @@ h6,
 .card:hover {
   transform: scale(1.04) rotate(-1deg);
 }
+
+.btn-outline-primary:hover {
+  color: #fff;
+}
+
+
+.btn-outline-primary {
+  border: 2px #b08e14 solid;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+}
+
+.active-btn {
+  color: #fff;
+  background-color: #b08e14;
+}
