@@ -36,6 +36,11 @@
 
 <body>
     <!-- Navbar Start -->
+    <a href="https://api.whatsapp.com/send?phone=+919558436600&text=Hello I want to know more about Sequence Spa - Traditional Spa for Wellness"
+        class="float" target="_blank">
+        <i class="fab fa-whatsapp" style="font-size: 35px;margin-top: 13px;color: #fff !important;"></i>
+    </a>
+    <!-- Navbar Start -->
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-lg-0 px-lg-5">
             <a href="index.html" class="navbar-brand ml-lg-3">
@@ -49,10 +54,9 @@
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="#about" class="nav-item nav-link">About</a>
                     <a href="#service" class="nav-item nav-link">Services</a>
-                    <a href="#price" class="nav-item nav-link">Pricing</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="" class="btn btn-primary d-none d-lg-block">Book Now</a>
+                <a href="./contact.html" class="btn btn-primary d-none d-lg-block">Book Now</a>
             </div>
         </nav>
     </div>
@@ -254,7 +258,7 @@
                 email: document.getElementById("email").value,
                 mobile: document.getElementById("mobile").value,
                 subject: document.getElementById("subject").value,
-                message: document.getElementById("message").value, 
+                message: document.getElementById("message").value,
             };
 
             const serviceID = "service_fuccn8d";
@@ -266,7 +270,7 @@
                     document.getElementById("email").value = "";
                     document.getElementById("mobile").value = "";
                     document.getElementById("subject").value = "";
-                    document.getElementById("message").value = ""; 
+                    document.getElementById("message").value = "";
 
                     console.log("Email sent successfully", response);
                     Swal.fire({
